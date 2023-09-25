@@ -1,0 +1,231 @@
+html {
+    font-family: sans-serif Verdana, Geneva, Tahoma, sans-serif
+}
+
+div.flex{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    padding: 0;
+    background-color: rgb(70, 69, 69);
+}
+
+
+.header {
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+.header_logo {
+    width: 6em;
+    height: auto;
+    padding: .5em;
+}
+
+#hamburguer {
+    background-color: rgb(13, 98, 209);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 0.3em;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+
+.header_nav {
+    display: none;
+}
+
+.header_nav.show {
+    display: block;
+}
+
+
+ul {
+    margin: 0;
+}
+
+.header_nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: .8em;
+}
+
+a {
+    background-color: rgb(231, 234, 238);
+    border: 3em;
+}
+
+.header_nav a {
+    color: rgb(6, 10, 15);
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+
+.header_nav a:hover {
+    background-color: orangered;
+    color: white;
+}
+
+.fundo {
+    background-image: url(pexels-miguel-á-padriñán-585293.jpg);
+    background-size: cover;
+    background-position: right center;
+    height: 100vh;
+    width: auto;
+}
+
+.botao{
+    background-color: orangered;
+    color: white;
+    text-transform: uppercase;
+    padding: .7em;
+    text-decoration: none;
+    font-size: 1.75em;
+}
+
+.botao:hover{
+    background-color: green;
+    color: black;
+}
+
+.fundo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-botao {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2em;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin-top: 6em;
+    padding: .5em;
+}
+
+.texto-botao:hover {
+    background-color: rgb(84, 145, 23);
+    color: white;
+    border: solid white;
+
+}
+
+
+footer {
+    background-color: rgb(13, 98, 209);
+    text-align: center;
+    padding: 1em;
+}
+
+
+.icones {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+}
+
+.icones2 {
+    width: 2.5em;
+}
+
+.texto-footer {
+    font-size: .75em;
+    text-transform: uppercase;
+    margin: 0;
+    color: white;
+    padding-top: .5em;
+}
+
+
+@media screen and (min-width: 48em) {
+    /*768px maior que*/
+
+
+    #hamburguer {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(13, 98, 209);
+    }
+
+    .header_logo {
+        margin-left: 2em;
+    }
+
+    .header_nav {
+        display: block;
+    }
+
+    .header_nav ul {
+        margin-right: 2em;
+        font-size: .9em;
+    }
+
+    .header_nav li {
+        display: inline-block;
+    }
+
+    .header_nav a {
+        border-radius: 5px;
+    }
+
+    .header_nav a:hover {
+        background-color: orangered;
+        color: white;
+    }
+
+    .header {
+        text-align: center;
+        margin: auto;
+        background-color: rgb(13, 98, 209);
+
+    }
+
+    .icones {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5em;
+    }
+
+    .botao{
+        background-color: orangered;
+        color: white;
+        text-transform: uppercase;
+        padding: .7em;
+        text-decoration: none;
+        font-size: 1.75em;
+    }
+
+    .botao:hover{
+        background-color: green;
+        color: black;
+    }
+
+    .fundo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .estilo{
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+    }
+
+}
